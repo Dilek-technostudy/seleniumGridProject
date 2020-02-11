@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="username" value="nigeria_tenant_admin"/>
+    <parameter name="password" value="TnvLOl54WxR75vylop2A"/>
+    <parameter name="name" value="Nora"/>
+    <parameter name="shortName" value="No"/>
+    <parameter name="multiplier" value="1.1"/>
+    
+    <test name="Test firefox">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="TestingBot"/>
+        </classes>
+    </test>
+
+    <test name="Test chrome">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="TestingBot"/>
+        </classes>
+    </test>
+</suite>
